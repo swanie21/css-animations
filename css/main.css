@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  margin: auto;
+  width: 80%;
+}
+
+h1 {
+  font-family: 'Spicy Rice', serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+button {
+  background: #ccc;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  color: #111;
+  font-family: 'Puritan', sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  margin: 5px;
+}
+
+.button1 {
+  transition: background 0.3s ease;
+}
+.button1:hover, .button1:focus {
+  background: #5543e0;
+  color: #fff;
+}
+
+.button2 {
+  transition: background 1s ease;
+}
+.button2:hover, .button2:focus {
+  background: #5543e0;
+  color: #fff;
+}
+
+.button3 {
+  transition: background 0.3s ease 0.5s, color 0.3s ease 0.5s;
+}
+.button3:hover, .button3:focus {
+  background: #5543e0;
+  color: #fff;
+}
+
+.button4 {
+  transition: background 0.5s ease, color 0.5s linear;
+}
+.button4:hover {
+  background: #5543e0;
+  color: #fe29b5;
+}
+
+.button5 {
+  position: relative;
+  transform: translateZ(0);
+  transition: color 0.3s ease;
+}
+.button5:hover, .button5:focus, .button5:active {
+  color: #fff;
+}
+.button5:hover:before, .button5:focus:before, .button5:active:before {
+  transform: scaleX(1);
+}
+
+.button5:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
+}
+
+.button6 {
+  position: relative;
+  transform: translateZ(0);
+  transition: color 0.3s ease;
+}
+.button6:hover, .button6:focus, .button6:active {
+  color: #fff;
+}
+.button6:hover:before, .button6:focus:before, .button6:active:before {
+  transform: scaleX(1);
+}
+
+.button6:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
+}
+
+.button7 {
+  position: relative;
+  transform: translateZ(0);
+  transition: color 0.3s ease;
+}
+.button7:hover, .button7:focus, .button7:active {
+  color: #fff;
+}
+.button7:hover:before, .button7:focus:before, .button7:active:before {
+  transform: scaleX(1);
+}
+
+.button7:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: 50% 0;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
+}
+
+.button8 {
+  position: relative;
+  transform: translateZ(0);
+  transition: color 0.3s ease;
+}
+.button8:hover, .button8:focus, .button8:active {
+  color: #fff;
+}
+.button8:hover:before, .button8:focus:before, .button8:active:before {
+  transform: scaleY(1);
+}
+
+.button8:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: "";
+  transform: scaleY(0);
+  transform-origin: 100% 0;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
+}
+
+.button9 {
+  position: relative;
+  transform: translateZ(0);
+  transition: color 0.3s ease;
+}
+.button9:hover, .button9:focus, .button9:active {
+  color: #fff;
+}
+.button9:hover:before, .button9:focus:before, .button9:active:before {
+  transform: scaleY(1);
+}
+
+.button9:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: "";
+  transform: scaleY(0);
+  transform-origin: 0 100%;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=main.css.map */
