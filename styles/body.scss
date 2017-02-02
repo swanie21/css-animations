@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  margin: auto;
+  width: 80%;
+}
+
+h1 {
+  color: #111;
+  font-family: 'Spicy Rice', serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    width: 300px;
+  }
+}
