@@ -22,20 +22,17 @@ h1 {
     flex-direction: column;
     width: 100%;
   }
+  section button {
+    margin: 10px 0;
+    width: 280px;
+  }
 
   h1 {
     font-size: 20px;
   }
 
-  button {
-    width: 300px;
-  }
-
   .animation-buttons {
     margin-top: 50px;
-  }
-  .animation-buttons button {
-    margin: 10px 0;
   }
 }
 button {
