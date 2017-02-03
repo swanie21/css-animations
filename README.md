@@ -1,4 +1,4 @@
-# CSS Transitions &amp; Transforms
+# CSS Animations using Transitions &amp; Transforms
 
 ### CSS transitions can enrich user experiences by adding animations to elements by smoothly changing CSS values over a specified duration
 
@@ -13,7 +13,12 @@ button {
   transition-timing-function: ease;
 }
 ```
-shorthand `transition: background 0.3s ease;`
+Shorthand:
+```
+button {
+  transition: background 0.3s ease;
+}
+```
 
 The `transition-timing-function` value allows the speed of the transition to change over time. There are 6 values for this property: `ease`, `linear`, `ease-in`, `ease-out`, `ease-in-out` and `cubic-bezier`. The `ease` value is the default value.
 
@@ -28,7 +33,12 @@ button {
 }
 ```
 
-shorthand `transition: background 0.3s ease 0.5;`
+Shorthand:
+```
+button {
+  transition: background 0.3s ease 0.5;
+}
+```
 
 You might think that the transition property goes on the pseudo-class like the `:hover` state, but you might want the transition triggered on other states like `:focus`, so you should only declare the transition on the normal state.
 
@@ -53,11 +63,61 @@ button {
 }
 ```
 
-shorthand `transition: all 0.5s ease;`
-(both the background and the color would be transitioned)
+Shorthand:
+```
+button {
+  transition: all 0.5s ease;`
+}
+```
+Both the background and the color would be transitioned
 
 By stating the `all` value you can target all the available properties so they all have the same duration and timing function on all the pseudo-class states (:hover, :focus, :active).
 
 Some other CSS properties that can be transitioned include `width`, `opacity`, `position` and `font-size`. Click [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties) for the complete list of properties that can be animated.
 
 ## Transform Examples:
+
+`scale()` increases or decreases the size of an element    
+
+```
+button:hover {
+  transform: scale(2);
+}
+```
+The button will be twice the original size when you hover over it
+
+You can pass in two values into `scale(x, y)`  
+```
+button:hover {
+  transform: scale(2, 3);
+}
+```
+The button will be twice its original width and triple its original height
+
+CSS3 animations use `keyframes` to specify what styles the element will have at certain times
+
+```
+button:hover {
+  animation-name: hover-pulse;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hover-pulse {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+```
+
+Shorthand:
+```
+button:hover {
+  animation: hover-pulse 1s linear infinite;
+}
+```
+This button will infinitely pulse increasing and decreasing in size when hovered on

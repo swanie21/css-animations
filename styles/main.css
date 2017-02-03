@@ -30,6 +30,13 @@ h1 {
   button {
     width: 300px;
   }
+
+  .animation-buttons {
+    margin-top: 50px;
+  }
+  .animation-buttons button {
+    margin: 10px 0;
+  }
 }
 button {
   background: #ccc;
@@ -534,6 +541,403 @@ button {
   transform: scale(0);
   transition: transform 0.5s ease-out;
   z-index: -1;
+}
+
+.animationButton1 {
+  transition: all 0.3s ease-out;
+}
+.animationButton1:hover, .animationButton1:focus, .animationButton1:active {
+  cursor: pointer;
+  transform: translateX(6px);
+}
+
+.animationButton2 {
+  transition: all 0.3s ease-out;
+}
+.animationButton2:hover, .animationButton2:focus, .animationButton2:active {
+  cursor: pointer;
+  transform: translateX(-6px);
+}
+
+.animationButton3 {
+  transition: all 0.3s ease-out;
+}
+.animationButton3:hover, .animationButton3:focus, .animationButton3:active {
+  cursor: pointer;
+  transform: translateY(6px);
+}
+
+.animationButton4 {
+  transition: all 0.3s ease-out;
+}
+.animationButton4:hover, .animationButton4:focus, .animationButton4:active {
+  cursor: pointer;
+  transform: translateY(-8px);
+}
+
+.animationButton5 {
+  transition: transform 0.3s ease;
+}
+.animationButton5:hover, .animationButton5:focus, .animationButton5:active {
+  cursor: pointer;
+  transform: rotate(4deg);
+}
+
+.animationButton6 {
+  transition: transform 0.3s ease;
+}
+.animationButton6:hover, .animationButton6:focus, .animationButton6:active {
+  cursor: pointer;
+  transform: rotate(-4deg);
+}
+
+.animationButton7 {
+  transition: transform 0.3s ease;
+}
+.animationButton7:hover, .animationButton7:focus, .animationButton7:active {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.animationButton8 {
+  transition: transform 0.3s ease;
+}
+.animationButton8:hover, .animationButton8:focus, .animationButton8:active {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.animationButton9:hover, .animationButton9:focus, .animationButton9:active {
+  animation: hover-pulse 1s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes hover-pulse {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+}
+.animationButton10:hover, .animationButton10:focus, .animationButton10:active {
+  animation: hover-push 0.3s linear 1;
+  cursor: pointer;
+}
+
+@keyframes hover-push {
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animationButton11:hover, .animationButton11:focus, .animationButton11:active {
+  animation: hover-pop 0.3s linear 1;
+  cursor: pointer;
+}
+
+@keyframes hover-pop {
+  50% {
+    transform: scale(1.2);
+  }
+}
+.animationButton12 {
+  transition: transform 0.3s ease;
+}
+.animationButton12:hover, .animationButton12:focus, .animationButton12:active {
+  cursor: pointer;
+  transform: skew(-10deg);
+}
+
+.animationButton13 {
+  transition: transform 0.3s ease;
+  transform-origin: 0 100%;
+}
+.animationButton13:hover, .animationButton13:focus, .animationButton13:active {
+  cursor: pointer;
+  transform: skew(-10deg);
+}
+
+.animationButton14 {
+  transition: transform 0.3s ease;
+  transform-origin: 0 100%;
+}
+.animationButton14:hover, .animationButton14:focus, .animationButton14:active {
+  cursor: pointer;
+  transform: skew(10deg);
+}
+
+.animationButton15:hover, .animationButton15:focus, .animationButton15:active {
+  animation: hover-skew-wobble 1s ease-in-out 1;
+  cursor: pointer;
+}
+
+@keyframes hover-skew-wobble {
+  15% {
+    transform: skew(-12deg);
+  }
+  30% {
+    transform: skew(10deg);
+  }
+  50% {
+    transform: skew(-6deg);
+  }
+  65% {
+    transform: skew(4deg);
+  }
+  80% {
+    transform: skew(-2deg);
+  }
+  100% {
+    transform: skew(0);
+  }
+}
+.animationButton16:hover, .animationButton16:focus, .animationButton16:active {
+  animation: hover-wobble-horizontal 1s ease-in-out 1;
+  cursor: pointer;
+}
+
+@keyframes hover-wobble-horizontal {
+  20% {
+    transform: translateX(8px);
+  }
+  40% {
+    transform: translateX(-6px);
+  }
+  60% {
+    transform: translateX(4px);
+  }
+  80% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.animationButton17:hover, .animationButton17:focus, .animationButton17:active {
+  animation: hover-wobble-vertical 1s ease-in-out 1;
+  cursor: pointer;
+}
+
+@keyframes hover-wobble-vertical {
+  20% {
+    transform: translateY(8px);
+  }
+  40% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+  80% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.animationButton18:hover, .animationButton18:focus, .animationButton18:active {
+  animation: hover-wobble-to-bottom-right 1s ease-in-out 1;
+  cursor: pointer;
+}
+
+@keyframes hover-wobble-to-bottom-right {
+  15% {
+    transform: translate(7px, 7px);
+  }
+  30% {
+    transform: translate(-6px, -6px);
+  }
+  45% {
+    transform: translate(4px, 4px);
+  }
+  60% {
+    transform: translate(-2px, -2px);
+  }
+  75% {
+    transform: translate(1px, 1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.animationButton19:hover, .animationButton19:focus, .animationButton19:active {
+  animation: hover-wobble-to-top-right 1s ease-in-out 1;
+  cursor: pointer;
+}
+
+@keyframes hover-wobble-to-top-right {
+  15% {
+    transform: translate(7px, -7px);
+  }
+  30% {
+    transform: translate(-6px, 6px);
+  }
+  45% {
+    transform: translate(4px, -4px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  75% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.animationButton20 {
+  transform-origin: 0 100%;
+}
+.animationButton20:hover, .animationButton20:focus, .animationButton20:active {
+  animation: hover-wobble-top 1s ease-in-out 1;
+  cursor: pointer;
+}
+
+@keyframes hover-wobble-top {
+  15% {
+    transform: skew(-12deg);
+  }
+  30% {
+    transform: skew(10deg);
+  }
+  50% {
+    transform: skew(-6deg);
+  }
+  65% {
+    transform: skew(4deg);
+  }
+  80% {
+    transform: skew(-2deg);
+  }
+  100% {
+    transform: skew(0);
+  }
+}
+.animationButton21 {
+  transform-origin: 100% 0;
+}
+.animationButton21:hover, .animationButton21:focus, .animationButton21:active {
+  animation: hover-wobble-bottom 1s ease-in-out 1;
+  cursor: pointer;
+}
+
+@keyframes hover-wobble-bottom {
+  15% {
+    transform: skew(-12deg);
+  }
+  30% {
+    transform: skew(10deg);
+  }
+  50% {
+    transform: skew(-6deg);
+  }
+  65% {
+    transform: skew(4deg);
+  }
+  80% {
+    transform: skew(-2deg);
+  }
+  100% {
+    transform: skew(0);
+  }
+}
+.animationButton22:hover, .animationButton22:focus, .animationButton22:active {
+  animation: hover-shake 0.15s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes hover-shake {
+  50% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.animationButton23:hover, .animationButton23:focus, .animationButton23:active {
+  animation: hover-shake-out 0.75s linear 1;
+  cursor: pointer;
+}
+
+@keyframes hover-shake-out {
+  10% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.animationButton24 {
+  transition-duration: 0.5s;
+}
+.animationButton24:hover, .animationButton24:focus, .animationButton24:active {
+  cursor: pointer;
+  transform: scale(1.15);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.animationButton25 {
+  transition-duration: 0.5s;
+}
+.animationButton25:hover, .animationButton25:focus, .animationButton25:active {
+  cursor: pointer;
+  transform: scale(0.9);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.animationButton26:hover, .animationButton26:focus, .animationButton26:active {
+  animation-name: hover-bob-float, hover-bob;
+  animation-duration: .3s, 1.5s;
+  animation-delay: 0s, .3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+  cursor: pointer;
+}
+
+@keyframes hover-bob {
+  0% {
+    transform: translateY(6px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(6px);
+  }
+}
+@keyframes hover-bob-float {
+  100% {
+    transform: translateY(6px);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
