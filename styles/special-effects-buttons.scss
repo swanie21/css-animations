@@ -15,12 +15,12 @@
     transition-property: width, height;
     width: 0;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    height: 25px;
-    width: 25px;
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      height: 25px;
+      width: 25px;
+    }
   }
 }
 
@@ -41,12 +41,12 @@
     transition-property: width, height;
     width: 0;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    height: 25px;
-    width: 25px;
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      height: 25px;
+      width: 25px;
+    }
   }
 }
 
@@ -67,12 +67,12 @@
     transition-property: width, height;
     width: 0;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    height: 25px;
-    width: 25px;
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      height: 25px;
+      width: 25px;
+    }
   }
 }
 
@@ -93,12 +93,12 @@
     transition-property: width, height;
     width: 0;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    height: 25px;
-    width: 25px;
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      height: 25px;
+      width: 25px;
+    }
   }
 }
 
@@ -116,11 +116,11 @@
     top: 0;
     transition: transform 0.3s ease;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    transform: translateY(-10px);
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      transform: translateY(-10px);
+    }
   }
 }
 
@@ -138,11 +138,11 @@
     top: calc(50% - 10px);
     transition: transform 0.3s ease;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    transform: translateX(10px);
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before{
+      transform: translateX(10px);
+    }
   }
 }
 
@@ -160,11 +160,11 @@
     position: absolute;
     transition: transform 0.3s ease;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    transform: translateY(10px);
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      transform: translateY(10px);
+    }
   }
 }
 
@@ -182,11 +182,11 @@
     top: calc(50% - 10px);
     transition: transform 0.3s ease;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    transform: translateX(-10px);
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      transform: translateX(-10px);
+    }
   }
 }
 
@@ -205,12 +205,12 @@
     top: 0;
     transition: transform 0.3s ease;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    transform: translateY(-10px);
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
     transform: translateY(10px);
+    &:before {
+      transform: translateY(-10px);
+    }
   }
 }
 
@@ -229,12 +229,12 @@
     top: calc(50% - 10px);
     transition: transform 0.3s ease;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    transform: translateX(10px);
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
     transform: translateX(-10px);
+    &:before {
+      transform: translateX(10px);
+    }
   }
 }
 
@@ -253,12 +253,12 @@
     position: absolute;
     transition: transform 0.3s ease;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    transform: translateY(10px);
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
     transform: translateY(-10px);
+    &:before {
+      transform: translateY(10px);
+    }
   }
 }
 
@@ -277,11 +277,11 @@
     top: calc(50% - 10px);
     transition: transform 0.3s ease;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    transform: translateX(-10px);
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
     transform: translateX(10px);
+    &:before {
+      transform: translateX(-10px);
+    }
   }
 }

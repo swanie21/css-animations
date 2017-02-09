@@ -169,18 +169,18 @@
   &:before {
     background: $button-border-color;
     bottom: 0;
-    content: "";
+    content: '';
     height: 4px;
     left: 0;
     position: absolute;
     right: 100%;
     transition: right 0.3s ease-out;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    right: 0;
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      right: 0;
+    }
   }
 }
 
@@ -193,18 +193,18 @@
   &:before {
     background: $button-border-color;
     bottom: 0;
-    content: "";
+    content: '';
     height: 4px;
     left: 100%;
     position: absolute;
     right: 0;
     transition: left 0.3s ease-out;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    left: 0;
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      left: 0;
+    }
   }
 }
 
@@ -217,7 +217,7 @@
   &:before {
     background: $button-border-color;
     bottom: 0;
-    content: "";
+    content: '';
     height: 4px;
     left: 50%;
     position: absolute;
@@ -225,12 +225,12 @@
     transition: 0.3s ease-out;
     transition-property: left, right;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    left: 0;
-    right: 0;
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      left: 0;
+      right: 0;
+    }
   }
 }
 
@@ -242,7 +242,7 @@
   transform: translateZ(0);
   &:before {
     background: $button-border-color;
-    content: "";
+    content: '';
     height: 4px;
     left: 0;
     position: absolute;
@@ -250,11 +250,11 @@
     top: 0;
     transition: right 0.3s ease-out;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    right: 0;
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      right: 0;
+    }
   }
 }
 
@@ -266,7 +266,7 @@
   transform: translateZ(0);
   &:before {
     background: $button-border-color;
-    content: "";
+    content: '';
     height: 4px;
     left: 100%;
     position: absolute;
@@ -274,11 +274,11 @@
     top: 0;
     transition: left 0.3s ease-out;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    left: 0;
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      left: 0;
+    }
   }
 }
 
@@ -304,19 +304,19 @@
     border-style: solid;
     border-width: 0;
     bottom: 0;
-    content: "";
+    content: '';
     left: 0;
     position: absolute;
     right: 0;
     top: 0;
     transition: border-width 0.2s ease-out;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    border-width: 4px;
-    transform: translateY(0);
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      border-width: 4px;
+      transform: translateY(0);
+    }
   }
 }
 
@@ -329,7 +329,7 @@
   &:before {
     background: $button-border-color;
     bottom: 0;
-    content: "";
+    content: '';
     height: 4px;
     left: 0;
     position: absolute;
@@ -337,11 +337,11 @@
     transform: translateY(4px);
     transition: transform 0.3s ease-out;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    transform: translateY(0);
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      transform: translateY(0);
+    }
   }
 }
 
@@ -353,7 +353,7 @@
   transform: translateZ(0);
   &:before {
     background: $button-border-color;
-    content: "";
+    content: '';
     height: 4px;
     left: 0;
     position: absolute;
@@ -362,10 +362,10 @@
     transform: translateY(-4px);
     transition: transform 0.3s ease-out;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    transform: translateY(0);
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before {
+      transform: translateY(0);
+    }
   }
 }

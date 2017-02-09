@@ -15,6 +15,19 @@ h1 {
   text-align: center;
 }
 
+button {
+  background: #ccc;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  color: #111;
+  font-family: 'Puritan', sans-serif;
+  font-size: 20px;
+  outline: none;
+  padding: 15px;
+  margin: 6px;
+}
+
 @media screen and (max-width: 420px) {
   section {
     align-items: center;
@@ -141,8 +154,8 @@ h1 {
 }
 
 .animationButton13 {
-  transition: transform 0.3s ease;
   transform-origin: 0 100%;
+  transition: transform 0.3s ease;
 }
 .animationButton13:hover, .animationButton13:focus, .animationButton13:active {
   cursor: pointer;
@@ -150,8 +163,8 @@ h1 {
 }
 
 .animationButton14 {
-  transition: transform 0.3s ease;
   transform-origin: 0 100%;
+  transition: transform 0.3s ease;
 }
 .animationButton14:hover, .animationButton14:focus, .animationButton14:active {
   cursor: pointer;
@@ -388,7 +401,7 @@ h1 {
 }
 .animationButton24:hover, .animationButton24:focus, .animationButton24:active {
   cursor: pointer;
-  transform: scale(1.15);
+  transform: scale(0.9);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
@@ -397,18 +410,18 @@ h1 {
 }
 .animationButton25:hover, .animationButton25:focus, .animationButton25:active {
   cursor: pointer;
-  transform: scale(0.9);
+  transform: scale(1.15);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 .animationButton26:hover, .animationButton26:focus, .animationButton26:active {
-  animation-name: hover-bob-float, hover-bob;
-  animation-duration: .3s, 1.5s;
   animation-delay: 0s, .3s;
-  animation-timing-function: ease-out, ease-in-out;
-  animation-iteration-count: 1, infinite;
-  animation-fill-mode: forwards;
   animation-direction: normal, alternate;
+  animation-duration: .3s, 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1, infinite;
+  animation-name: hover-bob-float, hover-bob;
+  animation-timing-function: ease-out, ease-in-out;
   cursor: pointer;
 }
 
@@ -428,19 +441,6 @@ h1 {
     transform: translateY(6px);
   }
 }
-button {
-  background: #ccc;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-  color: #111;
-  font-family: 'Puritan', sans-serif;
-  font-size: 20px;
-  outline: none;
-  padding: 15px;
-  margin: 6px;
-}
-
 .button1 {
   transition: background 0.3s ease;
 }
@@ -483,6 +483,20 @@ button {
   transform: translateZ(0);
   transition: color 0.3s ease;
 }
+.button5:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: '';
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
+}
 .button5:hover, .button5:focus, .button5:active {
   color: #fff;
   cursor: pointer;
@@ -491,25 +505,24 @@ button {
   transform: scaleX(1);
 }
 
-.button5:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #5543e0;
-  border-radius: 5px;
-  content: "";
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease-out;
-  z-index: -1;
-}
-
 .button6 {
   position: relative;
   transform: translateZ(0);
   transition: color 0.3s ease;
+}
+.button6:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: '';
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
 }
 .button6:hover, .button6:focus, .button6:active {
   color: #fff;
@@ -519,25 +532,24 @@ button {
   transform: scaleX(1);
 }
 
-.button6:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #5543e0;
-  border-radius: 5px;
-  content: "";
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease-out;
-  z-index: -1;
-}
-
 .button7 {
   position: relative;
   transform: translateZ(0);
   transition: color 0.3s ease;
+}
+.button7:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: '';
+  transform: scaleY(0);
+  transform-origin: 100% 0;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
 }
 .button7:hover, .button7:focus, .button7:active {
   color: #fff;
@@ -547,25 +559,24 @@ button {
   transform: scaleY(1);
 }
 
-.button7:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #5543e0;
-  border-radius: 5px;
-  content: "";
-  transform: scaleY(0);
-  transform-origin: 100% 0;
-  transition: transform 0.3s ease-out;
-  z-index: -1;
-}
-
 .button8 {
   position: relative;
   transform: translateZ(0);
   transition: color 0.3s ease;
+}
+.button8:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: '';
+  transform: scaleY(0);
+  transform-origin: 0 100%;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
 }
 .button8:hover, .button8:focus, .button8:active {
   color: #fff;
@@ -575,25 +586,24 @@ button {
   transform: scaleY(1);
 }
 
-.button8:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #5543e0;
-  border-radius: 5px;
-  content: "";
-  transform: scaleY(0);
-  transform-origin: 0 100%;
-  transition: transform 0.3s ease-out;
-  z-index: -1;
-}
-
 .button9 {
   position: relative;
   transform: translateZ(0);
   transition: color 0.3s ease;
+}
+.button9:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: '';
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
 }
 .button9:hover, .button9:focus, .button9:active {
   color: #fff;
@@ -603,26 +613,25 @@ button {
   transform: scaleX(1);
 }
 
-.button9:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #5543e0;
-  border-radius: 5px;
-  content: "";
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.3s ease-out;
-  z-index: -1;
-}
-
 .button10 {
   background: #5543e0;
   position: relative;
   transform: translateZ(0);
   transition: color 0.3s ease;
+}
+.button10:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #ccc;
+  border-radius: 5px;
+  content: '';
+  transform: scaleX(1);
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
 }
 .button10:hover, .button10:focus, .button10:active {
   color: #fff;
@@ -632,25 +641,24 @@ button {
   transform: scaleX(0);
 }
 
-.button10:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #ccc;
-  border-radius: 5px;
-  content: "";
-  transform: scaleX(1);
-  transform-origin: center;
-  transition: transform 0.3s ease-out;
-  z-index: -1;
-}
-
 .button11 {
   position: relative;
   transform: translateZ(0);
   transition: color 0.3s ease;
+}
+.button11:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: '';
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
 }
 .button11:hover, .button11:focus, .button11:active {
   color: #fff;
@@ -660,26 +668,25 @@ button {
   transform: scaleY(1);
 }
 
-.button11:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #5543e0;
-  border-radius: 5px;
-  content: "";
-  transform: scaleY(0);
-  transform-origin: center;
-  transition: transform 0.3s ease-out;
-  z-index: -1;
-}
-
 .button12 {
   background: #5543e0;
   position: relative;
   transform: translateZ(0);
   transition: color 0.3s ease;
+}
+.button12:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #ccc;
+  border-radius: 5px;
+  content: '';
+  transform: scaleY(1);
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
 }
 .button12:hover, .button12:focus, .button12:active {
   color: #fff;
@@ -689,25 +696,24 @@ button {
   transform: scaleY(0);
 }
 
-.button12:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #ccc;
-  border-radius: 5px;
-  content: "";
-  transform: scaleY(1);
-  transform-origin: center;
-  transition: transform 0.3s ease-out;
-  z-index: -1;
-}
-
 .button13 {
   position: relative;
   transform: translateZ(0);
   transition: color 0.5s ease;
+}
+.button13:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: '';
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-out;
+  z-index: -1;
 }
 .button13:hover, .button13:focus, .button13:active {
   color: #fff;
@@ -718,25 +724,24 @@ button {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-.button13:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #5543e0;
-  border-radius: 5px;
-  content: "";
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-out;
-  z-index: -1;
-}
-
 .button14 {
   position: relative;
   transform: translateZ(0);
   transition: color 0.5s ease;
+}
+.button14:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: '';
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-out;
+  z-index: -1;
 }
 .button14:hover, .button14:focus, .button14:active {
   color: #fff;
@@ -747,25 +752,24 @@ button {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-.button14:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #5543e0;
-  border-radius: 5px;
-  content: "";
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s ease-out;
-  z-index: -1;
-}
-
 .button15 {
   position: relative;
   transform: translateZ(0);
   transition: color 0.5s ease;
+}
+.button15:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: '';
+  transform: scaleY(0);
+  transform-origin: 100% 0;
+  transition: transform 0.5s ease-out;
+  z-index: -1;
 }
 .button15:hover, .button15:focus, .button15:active {
   color: #fff;
@@ -776,25 +780,24 @@ button {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-.button15:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #5543e0;
-  border-radius: 5px;
-  content: "";
-  transform: scaleY(0);
-  transform-origin: 100% 0;
-  transition: transform 0.5s ease-out;
-  z-index: -1;
-}
-
 .button16 {
   position: relative;
   transform: translateZ(0);
   transition: color 0.5s ease;
+}
+.button16:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: '';
+  transform: scaleY(0);
+  transform-origin: 0 100%;
+  transition: transform 0.5s ease-out;
+  z-index: -1;
 }
 .button16:hover, .button16:focus, .button16:active {
   color: #fff;
@@ -805,26 +808,24 @@ button {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
-.button16:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #5543e0;
-  border-radius: 5px;
-  content: "";
-  transform: scaleY(0);
-  transform-origin: 0 100%;
-  transition: transform 0.5s ease-out;
-  z-index: -1;
-}
-
 .button17 {
   background: #5543e0;
   position: relative;
   transform: translateZ(0);
   transition: color 0.5s ease;
+}
+.button17:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #ccc;
+  border-radius: 5px;
+  content: '';
+  transform: scale(1);
+  transition: transform 0.5s ease-out;
+  z-index: -1;
 }
 .button17:hover, .button17:focus, .button17:active {
   color: #fff;
@@ -834,25 +835,24 @@ button {
   transform: scale(0);
 }
 
-.button17:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #ccc;
-  border-radius: 5px;
-  content: "";
-  transform: scale(1);
-  transition: transform 0.5s ease-out;
-  z-index: -1;
-}
-
 .button18 {
   background: #ccc;
   position: relative;
   transform: translateZ(0);
   transition: color 0.5s ease;
+}
+.button18:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #5543e0;
+  border-radius: 5px;
+  content: '';
+  transform: scale(0);
+  transition: transform 0.5s ease-out;
+  z-index: -1;
 }
 .button18:hover, .button18:focus, .button18:active {
   color: #fff;
@@ -862,26 +862,25 @@ button {
   transform: scale(1);
 }
 
-.button18:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #5543e0;
-  border-radius: 5px;
-  content: "";
-  transform: scale(0);
-  transition: transform 0.5s ease-out;
-  z-index: -1;
-}
-
 .button19 {
   background: #5543e0;
   overflow: hidden;
   position: relative;
   transform: translateZ(0);
   transition: color 0.5s ease;
+}
+.button19:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #ccc;
+  border-radius: 100%;
+  content: '';
+  transform: scale(2);
+  transition: transform 0.5s ease-out;
+  z-index: -1;
 }
 .button19:hover, .button19:focus, .button19:active {
   color: #fff;
@@ -891,20 +890,6 @@ button {
   transform: scale(0);
 }
 
-.button19:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #ccc;
-  border-radius: 100%;
-  content: "";
-  transform: scale(2);
-  transition: transform 0.5s ease-out;
-  z-index: -1;
-}
-
 .button20 {
   background: #ccc;
   overflow: hidden;
@@ -912,26 +897,25 @@ button {
   transform: translateZ(0);
   transition: color 0.5s ease;
 }
+.button20:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #5543e0;
+  border-radius: 100%;
+  content: '';
+  transform: scale(0);
+  transition: transform 0.5s ease-out;
+  z-index: -1;
+}
 .button20:hover, .button20:focus, .button20:active {
   color: #fff;
   cursor: pointer;
 }
 .button20:hover:before, .button20:focus:before, .button20:active:before {
   transform: scale(2);
-}
-
-.button20:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #5543e0;
-  border-radius: 100%;
-  content: "";
-  transform: scale(0);
-  transition: transform 0.5s ease-out;
-  z-index: -1;
 }
 
 .borderButton1 {
@@ -1096,18 +1080,18 @@ button {
 .borderButton8:before {
   background: #1eac9b;
   bottom: 0;
-  content: "";
+  content: '';
   height: 4px;
   left: 0;
   position: absolute;
   right: 100%;
   transition: right 0.3s ease-out;
 }
-.borderButton8:hover:before, .borderButton8:focus:before, .borderButton8:active:before {
-  right: 0;
-}
 .borderButton8:hover, .borderButton8:focus, .borderButton8:active {
   cursor: pointer;
+}
+.borderButton8:hover:before, .borderButton8:focus:before, .borderButton8:active:before {
+  right: 0;
 }
 
 .borderButton9 {
@@ -1119,18 +1103,18 @@ button {
 .borderButton9:before {
   background: #1eac9b;
   bottom: 0;
-  content: "";
+  content: '';
   height: 4px;
   left: 100%;
   position: absolute;
   right: 0;
   transition: left 0.3s ease-out;
 }
-.borderButton9:hover:before, .borderButton9:focus:before, .borderButton9:active:before {
-  left: 0;
-}
 .borderButton9:hover, .borderButton9:focus, .borderButton9:active {
   cursor: pointer;
+}
+.borderButton9:hover:before, .borderButton9:focus:before, .borderButton9:active:before {
+  left: 0;
 }
 
 .borderButton10 {
@@ -1142,7 +1126,7 @@ button {
 .borderButton10:before {
   background: #1eac9b;
   bottom: 0;
-  content: "";
+  content: '';
   height: 4px;
   left: 50%;
   position: absolute;
@@ -1150,12 +1134,12 @@ button {
   transition: 0.3s ease-out;
   transition-property: left, right;
 }
+.borderButton10:hover, .borderButton10:focus, .borderButton10:active {
+  cursor: pointer;
+}
 .borderButton10:hover:before, .borderButton10:focus:before, .borderButton10:active:before {
   left: 0;
   right: 0;
-}
-.borderButton10:hover, .borderButton10:focus, .borderButton10:active {
-  cursor: pointer;
 }
 
 .borderButton11 {
@@ -1166,7 +1150,7 @@ button {
 }
 .borderButton11:before {
   background: #1eac9b;
-  content: "";
+  content: '';
   height: 4px;
   left: 0;
   position: absolute;
@@ -1174,11 +1158,11 @@ button {
   top: 0;
   transition: right 0.3s ease-out;
 }
-.borderButton11:hover:before, .borderButton11:focus:before, .borderButton11:active:before {
-  right: 0;
-}
 .borderButton11:hover, .borderButton11:focus, .borderButton11:active {
   cursor: pointer;
+}
+.borderButton11:hover:before, .borderButton11:focus:before, .borderButton11:active:before {
+  right: 0;
 }
 
 .borderButton12 {
@@ -1189,7 +1173,7 @@ button {
 }
 .borderButton12:before {
   background: #1eac9b;
-  content: "";
+  content: '';
   height: 4px;
   left: 100%;
   position: absolute;
@@ -1197,11 +1181,11 @@ button {
   top: 0;
   transition: left 0.3s ease-out;
 }
-.borderButton12:hover:before, .borderButton12:focus:before, .borderButton12:active:before {
-  left: 0;
-}
 .borderButton12:hover, .borderButton12:focus, .borderButton12:active {
   cursor: pointer;
+}
+.borderButton12:hover:before, .borderButton12:focus:before, .borderButton12:active:before {
+  left: 0;
 }
 
 .borderButton13 {
@@ -1225,19 +1209,19 @@ button {
   border-style: solid;
   border-width: 0;
   bottom: 0;
-  content: "";
+  content: '';
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
   transition: border-width 0.2s ease-out;
 }
+.borderButton14:hover, .borderButton14:focus, .borderButton14:active {
+  cursor: pointer;
+}
 .borderButton14:hover:before, .borderButton14:focus:before, .borderButton14:active:before {
   border-width: 4px;
   transform: translateY(0);
-}
-.borderButton14:hover, .borderButton14:focus, .borderButton14:active {
-  cursor: pointer;
 }
 
 .borderButton15 {
@@ -1249,7 +1233,7 @@ button {
 .borderButton15:before {
   background: #1eac9b;
   bottom: 0;
-  content: "";
+  content: '';
   height: 4px;
   left: 0;
   position: absolute;
@@ -1257,11 +1241,11 @@ button {
   transform: translateY(4px);
   transition: transform 0.3s ease-out;
 }
-.borderButton15:hover:before, .borderButton15:focus:before, .borderButton15:active:before {
-  transform: translateY(0);
-}
 .borderButton15:hover, .borderButton15:focus, .borderButton15:active {
   cursor: pointer;
+}
+.borderButton15:hover:before, .borderButton15:focus:before, .borderButton15:active:before {
+  transform: translateY(0);
 }
 
 .borderButton16 {
@@ -1272,7 +1256,7 @@ button {
 }
 .borderButton16:before {
   background: #1eac9b;
-  content: "";
+  content: '';
   height: 4px;
   left: 0;
   position: absolute;
@@ -1281,11 +1265,11 @@ button {
   transform: translateY(-4px);
   transition: transform 0.3s ease-out;
 }
-.borderButton16:hover:before, .borderButton16:focus:before, .borderButton16:active:before {
-  transform: translateY(0);
-}
 .borderButton16:hover, .borderButton16:focus, .borderButton16:active {
   cursor: pointer;
+}
+.borderButton16:hover:before, .borderButton16:focus:before, .borderButton16:active:before {
+  transform: translateY(0);
 }
 
 .shadowButton1 {
@@ -1334,13 +1318,13 @@ button {
   transition-property: transform, opacity;
   width: 90%;
 }
-.shadowButton4:hover:before, .shadowButton4:focus:before, .shadowButton4:active:before {
-  opacity: 1;
-  transform: translateY(5px);
-}
 .shadowButton4:hover, .shadowButton4:focus, .shadowButton4:active {
   cursor: pointer;
   transform: translateY(-5px);
+}
+.shadowButton4:hover:before, .shadowButton4:focus:before, .shadowButton4:active:before {
+  opacity: 1;
+  transform: translateY(5px);
 }
 
 .shadowButton5 {
@@ -1373,11 +1357,11 @@ button {
   background: radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, 0.6) 0%, transparent 80%);
   top: 100%;
 }
-.shadowButton6:hover:before, .shadowButton6:focus:before, .shadowButton6:active:before, .shadowButton6:hover:after, .shadowButton6:focus:after, .shadowButton6:active:after {
-  opacity: 1;
-}
 .shadowButton6:hover, .shadowButton6:focus, .shadowButton6:active {
   cursor: pointer;
+}
+.shadowButton6:hover:before, .shadowButton6:hover:after, .shadowButton6:focus:before, .shadowButton6:focus:after, .shadowButton6:active:before, .shadowButton6:active:after {
+  opacity: 1;
 }
 
 .shadowButton7 {
@@ -1416,12 +1400,12 @@ button {
   transition-property: width, height;
   width: 0;
 }
+.specialButton1:hover, .specialButton1:focus, .specialButton1:active {
+  cursor: pointer;
+}
 .specialButton1:hover:before, .specialButton1:focus:before, .specialButton1:active:before {
   height: 25px;
   width: 25px;
-}
-.specialButton1:hover, .specialButton1:focus, .specialButton1:active {
-  cursor: pointer;
 }
 
 .specialButton2 {
@@ -1441,12 +1425,12 @@ button {
   transition-property: width, height;
   width: 0;
 }
+.specialButton2:hover, .specialButton2:focus, .specialButton2:active {
+  cursor: pointer;
+}
 .specialButton2:hover:before, .specialButton2:focus:before, .specialButton2:active:before {
   height: 25px;
   width: 25px;
-}
-.specialButton2:hover, .specialButton2:focus, .specialButton2:active {
-  cursor: pointer;
 }
 
 .specialButton3 {
@@ -1466,12 +1450,12 @@ button {
   transition-property: width, height;
   width: 0;
 }
+.specialButton3:hover, .specialButton3:focus, .specialButton3:active {
+  cursor: pointer;
+}
 .specialButton3:hover:before, .specialButton3:focus:before, .specialButton3:active:before {
   height: 25px;
   width: 25px;
-}
-.specialButton3:hover, .specialButton3:focus, .specialButton3:active {
-  cursor: pointer;
 }
 
 .specialButton4 {
@@ -1491,12 +1475,12 @@ button {
   transition-property: width, height;
   width: 0;
 }
+.specialButton4:hover, .specialButton4:focus, .specialButton4:active {
+  cursor: pointer;
+}
 .specialButton4:hover:before, .specialButton4:focus:before, .specialButton4:active:before {
   height: 25px;
   width: 25px;
-}
-.specialButton4:hover, .specialButton4:focus, .specialButton4:active {
-  cursor: pointer;
 }
 
 .specialButton5 {
@@ -1513,11 +1497,11 @@ button {
   top: 0;
   transition: transform 0.3s ease;
 }
-.specialButton5:hover:before, .specialButton5:focus:before, .specialButton5:active:before {
-  transform: translateY(-10px);
-}
 .specialButton5:hover, .specialButton5:focus, .specialButton5:active {
   cursor: pointer;
+}
+.specialButton5:hover:before, .specialButton5:focus:before, .specialButton5:active:before {
+  transform: translateY(-10px);
 }
 
 .specialButton6 {
@@ -1534,11 +1518,11 @@ button {
   top: calc(50% - 10px);
   transition: transform 0.3s ease;
 }
-.specialButton6:hover:before, .specialButton6:focus:before, .specialButton6:active:before {
-  transform: translateX(10px);
-}
 .specialButton6:hover, .specialButton6:focus, .specialButton6:active {
   cursor: pointer;
+}
+.specialButton6:hover:before, .specialButton6:focus:before, .specialButton6:active:before {
+  transform: translateX(10px);
 }
 
 .specialButton7 {
@@ -1555,11 +1539,11 @@ button {
   position: absolute;
   transition: transform 0.3s ease;
 }
-.specialButton7:hover:before, .specialButton7:focus:before, .specialButton7:active:before {
-  transform: translateY(10px);
-}
 .specialButton7:hover, .specialButton7:focus, .specialButton7:active {
   cursor: pointer;
+}
+.specialButton7:hover:before, .specialButton7:focus:before, .specialButton7:active:before {
+  transform: translateY(10px);
 }
 
 .specialButton8 {
@@ -1576,11 +1560,11 @@ button {
   top: calc(50% - 10px);
   transition: transform 0.3s ease;
 }
-.specialButton8:hover:before, .specialButton8:focus:before, .specialButton8:active:before {
-  transform: translateX(-10px);
-}
 .specialButton8:hover, .specialButton8:focus, .specialButton8:active {
   cursor: pointer;
+}
+.specialButton8:hover:before, .specialButton8:focus:before, .specialButton8:active:before {
+  transform: translateX(-10px);
 }
 
 .specialButton9 {
@@ -1598,12 +1582,12 @@ button {
   top: 0;
   transition: transform 0.3s ease;
 }
-.specialButton9:hover:before, .specialButton9:focus:before, .specialButton9:active:before {
-  transform: translateY(-10px);
-}
 .specialButton9:hover, .specialButton9:focus, .specialButton9:active {
   cursor: pointer;
   transform: translateY(10px);
+}
+.specialButton9:hover:before, .specialButton9:focus:before, .specialButton9:active:before {
+  transform: translateY(-10px);
 }
 
 .specialButton10 {
@@ -1621,12 +1605,12 @@ button {
   top: calc(50% - 10px);
   transition: transform 0.3s ease;
 }
-.specialButton10:hover:before, .specialButton10:focus:before, .specialButton10:active:before {
-  transform: translateX(10px);
-}
 .specialButton10:hover, .specialButton10:focus, .specialButton10:active {
   cursor: pointer;
   transform: translateX(-10px);
+}
+.specialButton10:hover:before, .specialButton10:focus:before, .specialButton10:active:before {
+  transform: translateX(10px);
 }
 
 .specialButton11 {
@@ -1644,12 +1628,12 @@ button {
   position: absolute;
   transition: transform 0.3s ease;
 }
-.specialButton11:hover:before, .specialButton11:focus:before, .specialButton11:active:before {
-  transform: translateY(10px);
-}
 .specialButton11:hover, .specialButton11:focus, .specialButton11:active {
   cursor: pointer;
   transform: translateY(-10px);
+}
+.specialButton11:hover:before, .specialButton11:focus:before, .specialButton11:active:before {
+  transform: translateY(10px);
 }
 
 .specialButton12 {
@@ -1667,12 +1651,12 @@ button {
   top: calc(50% - 10px);
   transition: transform 0.3s ease;
 }
-.specialButton12:hover:before, .specialButton12:focus:before, .specialButton12:active:before {
-  transform: translateX(-10px);
-}
 .specialButton12:hover, .specialButton12:focus, .specialButton12:active {
   cursor: pointer;
   transform: translateX(10px);
+}
+.specialButton12:hover:before, .specialButton12:focus:before, .specialButton12:active:before {
+  transform: translateX(-10px);
 }
 
 /*# sourceMappingURL=main.css.map */

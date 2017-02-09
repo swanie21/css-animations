@@ -47,13 +47,13 @@
     transition-property: transform, opacity;
     width: 90%;
   }
-  &:hover:before, &:focus:before, &:active:before {
-    opacity: 1;
-    transform: translateY(5px);
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
     transform: translateY(-5px);
+    &:before {
+      opacity: 1;
+      transform: translateY(5px);
+    }
   }
 }
 
@@ -88,11 +88,11 @@
     background: radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
     top: 100%;
   }
-  &:hover:before, &:focus:before, &:active:before, &:hover:after, &:focus:after, &:active:after {
-    opacity: 1;
-  }
   &:hover, &:focus, &:active {
     cursor: pointer;
+    &:before, &:after {
+      opacity: 1;
+    }
   }
 }
 
