@@ -1,0 +1,118 @@
+//shadow bottom
+.shadowButton1 {
+  box-shadow: 0 0 1px $light-gray;
+  transition: box-shadow 0.3s ease;
+  &:hover, &:focus, &:active {
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+}
+
+//shadow sides
+.shadowButton2 {
+  box-shadow: 0 0 1px $light-gray;
+  transition: box-shadow 0.3s ease;
+  &:hover, &:focus, &:active {
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+}
+
+//grow shadow
+.shadowButton3 {
+  box-shadow: 0 0 1px $light-gray;
+  transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+  &:hover, &:focus, &:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+//float shadow
+.shadowButton4 {
+  box-shadow: 0 0 1px $light-gray;
+  position: relative;
+  transition: transform 0.3s ease;
+  &:before {
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    content: '';
+    height: 10px;
+    left: 5%;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    transition-duration: 0.3s;
+    transition-property: transform, opacity;
+    width: 90%;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+    transform: translateY(-5px);
+  }
+}
+
+//glow
+.shadowButton5 {
+  box-shadow: 0 0 1px $light-gray;
+  transition: box-shadow 0.3s ease;
+  &:hover, &:focus, &:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+  }
+}
+
+//shadow radial
+.shadowButton6 {
+  box-shadow: 0 0 1px $light-gray;
+  position: relative;
+  &:before, &:after {
+    content: '';
+    height: 5px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.3s ease;
+    width: 100%;
+  }
+  &:before {
+    background: radial-gradient(ellipse at 50% 150%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
+    bottom: 100%;
+  }
+  &:after {
+    background: radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 80%);
+    top: 100%;
+  }
+  &:hover:before, &:focus:before, &:active:before, &:hover:after, &:focus:after, &:active:after {
+    opacity: 1;
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//shadow outset
+.shadowButton7 {
+  box-shadow: 0 0 1px $light-gray;
+  transition: box-shadow 0.3s ease;
+  &:hover, &:focus, &:active {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+}
+
+//shadow inset
+.shadowButton8 {
+  box-shadow: 0 0 1px $light-gray;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s ease;
+  &:hover, &:focus, &:active {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0);
+    cursor: pointer;
+  }
+}
