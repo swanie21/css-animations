@@ -1,0 +1,371 @@
+//fade in
+.borderButton1 {
+  box-shadow: inset 0 0 0 4px $light-gray;
+  transition: box-shadow 0.5s ease;
+  &:hover, &:focus, &:active {
+    box-shadow: inset 0 0 0 4px $button-border-color;
+    cursor: pointer;
+  }
+}
+
+//hollow out
+.borderButton2 {
+  box-shadow: inset 0 0 0 4px $light-gray;
+  transition: background 0.5s ease;
+  &:hover, &:focus, &:active {
+    background: none;
+    box-shadow: inset 0 0 0 4px $button-border-color;
+    cursor: pointer;
+  }
+}
+
+//inset border
+.borderButton3 {
+  box-shadow: none;
+  position: relative;
+  &:before {
+    border: $button-border-color solid 4px;
+    border-radius: 5px;
+    bottom: 4px;
+    content: '';
+    left: 4px;
+    opacity: 0;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: opacity 0.3s ease;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+//outline out
+.borderButton4 {
+  box-shadow: none;
+  position: relative;
+  &:before {
+    border: $light-gray solid 4px;
+    border-radius: 5px;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition-duration: 0.3s;
+    transition-property: top, right, bottom, left;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    border-color: $button-border-color;
+    bottom: -7px;
+    cursor: pointer;
+    left: -7px;
+    right: -7px;
+    top: -7px;
+  }
+}
+
+//outline in
+.borderButton5 {
+  box-shadow: none;
+  position: relative;
+  &:before {
+    border: $light-gray solid 4px;
+    border-radius: 5px;
+    bottom: -16px;
+    content: '';
+    left: -16px;
+    opacity: 0;
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    transition-duration: 0.3s;
+    transition-property: top, right, bottom, left;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    border-color: $button-border-color;
+    bottom: -7px;
+    cursor: pointer;
+    left: -7px;
+    opacity: 1;
+    right: -7px;
+    top: -7px;
+  }
+}
+
+//ripple out
+.borderButton6 {
+  box-shadow: none;
+  position: relative;
+  &:before {
+    animation-duration: 1s;
+    border: $light-gray solid 6px;
+    border-radius: 5px;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    animation-name: hover-ripple-out;
+    border-color: $button-border-color;
+    cursor: pointer;
+  }
+}
+
+@keyframes hover-ripple-out {
+  100% {
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+    right: -12px;
+    top: -12px;
+  }
+}
+
+//ripple in
+.borderButton7 {
+  box-shadow: none;
+  position: relative;
+  &:before {
+    animation-duration: 1s;
+    border: $light-gray solid 4px;
+    border-radius: 5px;
+    bottom: -12px;
+    content: '';
+    left: -12px;
+    opacity: 0;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    animation-name: hover-ripple-in;
+    border-color: $button-border-color;
+    cursor: pointer;
+  }
+}
+
+@keyframes hover-ripple-in {
+  100% {
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    right: 0;
+    top: 0;
+  }
+}
+
+//underline from left
+.borderButton8 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+  &:before {
+    background: $button-border-color;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    right: 100%;
+    transition: right 0.3s ease-out;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    right: 0;
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//underline from right
+.borderButton9 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+  &:before {
+    background: $button-border-color;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: 100%;
+    position: absolute;
+    right: 0;
+    transition: left 0.3s ease-out;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    left: 0;
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//underline from center
+.borderButton10 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+  &:before {
+    background: $button-border-color;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    right: 50%;
+    transition: 0.3s ease-out;
+    transition-property: left, right;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    left: 0;
+    right: 0;
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//overline from left
+.borderButton11 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+  &:before {
+    background: $button-border-color;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    transition: right 0.3s ease-out;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    right: 0;
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//overline from right
+.borderButton12 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+  &:before {
+    background: $button-border-color;
+    content: "";
+    height: 4px;
+    left: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: left 0.3s ease-out;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    left: 0;
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//round corners
+.borderButton13 {
+  box-shadow: none;
+  transition: border-radius 0.5s ease;
+  &:hover, &:focus, &:active {
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+//reveal
+.borderButton14 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+  &:before {
+    border-color: $button-border-color;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: border-width 0.2s ease-out;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    border-width: 4px;
+    transform: translateY(0);
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//underline reveal
+.borderButton15 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+  &:before {
+    background: $button-border-color;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: translateY(4px);
+    transition: transform 0.3s ease-out;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    transform: translateY(0);
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//overline reveal
+.borderButton16 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+  &:before {
+    background: $button-border-color;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-4px);
+    transition: transform 0.3s ease-out;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    transform: translateY(0);
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}

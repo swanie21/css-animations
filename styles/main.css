@@ -43,8 +43,9 @@ button {
   color: #111;
   font-family: 'Puritan', sans-serif;
   font-size: 20px;
+  outline: none;
   padding: 15px;
-  margin: 5px;
+  margin: 6px;
 }
 
 .button1 {
@@ -538,6 +539,360 @@ button {
   transform: scale(0);
   transition: transform 0.5s ease-out;
   z-index: -1;
+}
+
+.borderButton1 {
+  box-shadow: inset 0 0 0 4px #ccc;
+  transition: box-shadow 0.5s ease;
+}
+.borderButton1:hover, .borderButton1:focus, .borderButton1:active {
+  box-shadow: inset 0 0 0 4px #1eac9b;
+  cursor: pointer;
+}
+
+.borderButton2 {
+  box-shadow: inset 0 0 0 4px #ccc;
+  transition: background 0.5s ease;
+}
+.borderButton2:hover, .borderButton2:focus, .borderButton2:active {
+  background: none;
+  box-shadow: inset 0 0 0 4px #1eac9b;
+  cursor: pointer;
+}
+
+.borderButton3 {
+  box-shadow: none;
+  position: relative;
+}
+.borderButton3:before {
+  border: #1eac9b solid 4px;
+  border-radius: 5px;
+  bottom: 4px;
+  content: '';
+  left: 4px;
+  opacity: 0;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: opacity 0.3s ease;
+}
+.borderButton3:hover:before, .borderButton3:focus:before, .borderButton3:active:before {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.borderButton4 {
+  box-shadow: none;
+  position: relative;
+}
+.borderButton4:before {
+  border: #ccc solid 4px;
+  border-radius: 5px;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition-duration: 0.3s;
+  transition-property: top, right, bottom, left;
+}
+.borderButton4:hover:before, .borderButton4:focus:before, .borderButton4:active:before {
+  border-color: #1eac9b;
+  bottom: -7px;
+  cursor: pointer;
+  left: -7px;
+  right: -7px;
+  top: -7px;
+}
+
+.borderButton5 {
+  box-shadow: none;
+  position: relative;
+}
+.borderButton5:before {
+  border: #ccc solid 4px;
+  border-radius: 5px;
+  bottom: -16px;
+  content: '';
+  left: -16px;
+  opacity: 0;
+  position: absolute;
+  right: -16px;
+  top: -16px;
+  transition-duration: 0.3s;
+  transition-property: top, right, bottom, left;
+}
+.borderButton5:hover:before, .borderButton5:focus:before, .borderButton5:active:before {
+  border-color: #1eac9b;
+  bottom: -7px;
+  cursor: pointer;
+  left: -7px;
+  opacity: 1;
+  right: -7px;
+  top: -7px;
+}
+
+.borderButton6 {
+  box-shadow: none;
+  position: relative;
+}
+.borderButton6:before {
+  animation-duration: 1s;
+  border: #ccc solid 6px;
+  border-radius: 5px;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.borderButton6:hover:before, .borderButton6:focus:before, .borderButton6:active:before {
+  animation-name: hover-ripple-out;
+  border-color: #1eac9b;
+  cursor: pointer;
+}
+
+@keyframes hover-ripple-out {
+  100% {
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+    right: -12px;
+    top: -12px;
+  }
+}
+.borderButton7 {
+  box-shadow: none;
+  position: relative;
+}
+.borderButton7:before {
+  animation-duration: 1s;
+  border: #ccc solid 4px;
+  border-radius: 5px;
+  bottom: -12px;
+  content: '';
+  left: -12px;
+  opacity: 0;
+  position: absolute;
+  right: -12px;
+  top: -12px;
+}
+.borderButton7:hover:before, .borderButton7:focus:before, .borderButton7:active:before {
+  animation-name: hover-ripple-in;
+  border-color: #1eac9b;
+  cursor: pointer;
+}
+
+@keyframes hover-ripple-in {
+  100% {
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    right: 0;
+    top: 0;
+  }
+}
+.borderButton8 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+}
+.borderButton8:before {
+  background: #1eac9b;
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  right: 100%;
+  transition: right 0.3s ease-out;
+}
+.borderButton8:hover:before, .borderButton8:focus:before, .borderButton8:active:before {
+  right: 0;
+}
+.borderButton8:hover, .borderButton8:focus, .borderButton8:active {
+  cursor: pointer;
+}
+
+.borderButton9 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+}
+.borderButton9:before {
+  background: #1eac9b;
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 100%;
+  position: absolute;
+  right: 0;
+  transition: left 0.3s ease-out;
+}
+.borderButton9:hover:before, .borderButton9:focus:before, .borderButton9:active:before {
+  left: 0;
+}
+.borderButton9:hover, .borderButton9:focus, .borderButton9:active {
+  cursor: pointer;
+}
+
+.borderButton10 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+}
+.borderButton10:before {
+  background: #1eac9b;
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  right: 50%;
+  transition: 0.3s ease-out;
+  transition-property: left, right;
+}
+.borderButton10:hover:before, .borderButton10:focus:before, .borderButton10:active:before {
+  left: 0;
+  right: 0;
+}
+.borderButton10:hover, .borderButton10:focus, .borderButton10:active {
+  cursor: pointer;
+}
+
+.borderButton11 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+}
+.borderButton11:before {
+  background: #1eac9b;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  transition: right 0.3s ease-out;
+}
+.borderButton11:hover:before, .borderButton11:focus:before, .borderButton11:active:before {
+  right: 0;
+}
+.borderButton11:hover, .borderButton11:focus, .borderButton11:active {
+  cursor: pointer;
+}
+
+.borderButton12 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+}
+.borderButton12:before {
+  background: #1eac9b;
+  content: "";
+  height: 4px;
+  left: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: left 0.3s ease-out;
+}
+.borderButton12:hover:before, .borderButton12:focus:before, .borderButton12:active:before {
+  left: 0;
+}
+.borderButton12:hover, .borderButton12:focus, .borderButton12:active {
+  cursor: pointer;
+}
+
+.borderButton13 {
+  box-shadow: none;
+  transition: border-radius 0.5s ease;
+}
+.borderButton13:hover, .borderButton13:focus, .borderButton13:active {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.borderButton14 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+}
+.borderButton14:before {
+  border-color: #1eac9b;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: border-width 0.2s ease-out;
+}
+.borderButton14:hover:before, .borderButton14:focus:before, .borderButton14:active:before {
+  border-width: 4px;
+  transform: translateY(0);
+}
+.borderButton14:hover, .borderButton14:focus, .borderButton14:active {
+  cursor: pointer;
+}
+
+.borderButton15 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+}
+.borderButton15:before {
+  background: #1eac9b;
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: translateY(4px);
+  transition: transform 0.3s ease-out;
+}
+.borderButton15:hover:before, .borderButton15:focus:before, .borderButton15:active:before {
+  transform: translateY(0);
+}
+.borderButton15:hover, .borderButton15:focus, .borderButton15:active {
+  cursor: pointer;
+}
+
+.borderButton16 {
+  box-shadow: none;
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+}
+.borderButton16:before {
+  background: #1eac9b;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-4px);
+  transition: transform 0.3s ease-out;
+}
+.borderButton16:hover:before, .borderButton16:focus:before, .borderButton16:active:before {
+  transform: translateY(0);
+}
+.borderButton16:hover, .borderButton16:focus, .borderButton16:active {
+  cursor: pointer;
 }
 
 .animationButton1 {
