@@ -1,0 +1,287 @@
+//curl top left
+.specialButton1 {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  &:before {
+    background: #fff;
+    background: linear-gradient(135deg, #fff 45%, #aaaaaa 50%, #cccccc 56%, #fff 80%);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    content: '';
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition-duration: 0.3s;
+    transition-property: width, height;
+    width: 0;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    height: 25px;
+    width: 25px;
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//curl top right
+.specialButton2 {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  &:before {
+    background: #fff;
+    background: linear-gradient(225deg, #fff 45%, #aaaaaa 50%, #cccccc 56%, #fff 80%);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+    content: '';
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition-duration: 0.3s;
+    transition-property: width, height;
+    width: 0;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    height: 25px;
+    width: 25px;
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//curl bottom left
+.specialButton3 {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  &:before {
+    background: #fff;
+    background: linear-gradient(45deg, #fff 45%, #aaaaaa 50%, #cccccc 56%, #fff 80%);
+    bottom: 0;
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
+    content: '';
+    height: 0;
+    left: 0;
+    position: absolute;
+    transition-duration: 0.3s;
+    transition-property: width, height;
+    width: 0;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    height: 25px;
+    width: 25px;
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//curl bottom right
+.specialButton4 {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  &:before {
+    background: #fff;
+    background: linear-gradient(315deg, #fff 45%, #aaaaaa 50%, #cccccc 56%, #fff 80%);
+    bottom: 0;
+    box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
+    content: '';
+    height: 0;
+    position: absolute;
+    right: 0;
+    transition-duration: 0.3s;
+    transition-property: width, height;
+    width: 0;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    height: 25px;
+    width: 25px;
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//bubble top
+.specialButton5 {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  &:before {
+    border-color: transparent transparent $light-gray transparent;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    content: '';
+    left: calc(50% - 10px);
+    position: absolute;
+    top: 0;
+    transition: transform 0.3s ease;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    transform: translateY(-10px);
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//bubble right
+.specialButton6 {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  &:before {
+    border-color: transparent transparent transparent $light-gray;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: calc(50% - 10px);
+    transition: transform 0.3s ease;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    transform: translateX(10px);
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//bubble bottom
+.specialButton7 {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  &:before {
+    border-color: $light-gray transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    bottom: 0;
+    content: '';
+    left: calc(50% - 10px);
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    transform: translateY(10px);
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//bubble left
+.specialButton8 {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  &:before {
+    border-color: transparent $light-gray transparent transparent;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px);
+    transition: transform 0.3s ease;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    transform: translateX(-10px);
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+  }
+}
+
+//bubble float top
+.specialButton9 {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition: transform 0.3s ease;
+  &:before {
+    border-color: transparent transparent $light-gray transparent;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    content: '';
+    left: calc(50% - 10px);
+    position: absolute;
+    top: 0;
+    transition: transform 0.3s ease;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    transform: translateY(-10px);
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+    transform: translateY(10px);
+  }
+}
+
+//bubble float right
+.specialButton10 {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition: transform 0.3s ease;
+  &:before {
+    border-color: transparent transparent transparent $light-gray;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: calc(50% - 10px);
+    transition: transform 0.3s ease;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    transform: translateX(10px);
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+    transform: translateX(-10px);
+  }
+}
+
+//bubble float bottom
+.specialButton11 {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition: transform 0.3s ease;
+  &:before {
+    border-color: $light-gray transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    bottom: 0;
+    content: '';
+    left: calc(50% - 10px);
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    transform: translateY(10px);
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+    transform: translateY(-10px);
+  }
+}
+
+//bubble float left
+.specialButton12 {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition: transform 0.3s ease;
+  &:before {
+    border-color: transparent $light-gray transparent transparent;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    top: calc(50% - 10px);
+    transition: transform 0.3s ease;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    transform: translateX(-10px);
+  }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+    transform: translateX(10px);
+  }
+}

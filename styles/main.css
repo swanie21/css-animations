@@ -29,9 +29,6 @@ h1 {
 
   h1 {
     font-size: 20px;
-  }
-
-  .animation-buttons {
     margin-top: 50px;
   }
 }
@@ -1400,6 +1397,282 @@ button {
 .shadowButton8:hover, .shadowButton8:focus, .shadowButton8:active {
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5), 0 0 1px transparent;
   cursor: pointer;
+}
+
+.specialButton1 {
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.specialButton1:before {
+  background: #fff;
+  background: linear-gradient(135deg, #fff 45%, #aaaaaa 50%, #cccccc 56%, #fff 80%);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  content: '';
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition-duration: 0.3s;
+  transition-property: width, height;
+  width: 0;
+}
+.specialButton1:hover:before, .specialButton1:focus:before, .specialButton1:active:before {
+  height: 25px;
+  width: 25px;
+}
+.specialButton1:hover, .specialButton1:focus, .specialButton1:active {
+  cursor: pointer;
+}
+
+.specialButton2 {
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.specialButton2:before {
+  background: #fff;
+  background: linear-gradient(225deg, #fff 45%, #aaaaaa 50%, #cccccc 56%, #fff 80%);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+  content: '';
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition-duration: 0.3s;
+  transition-property: width, height;
+  width: 0;
+}
+.specialButton2:hover:before, .specialButton2:focus:before, .specialButton2:active:before {
+  height: 25px;
+  width: 25px;
+}
+.specialButton2:hover, .specialButton2:focus, .specialButton2:active {
+  cursor: pointer;
+}
+
+.specialButton3 {
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.specialButton3:before {
+  background: #fff;
+  background: linear-gradient(45deg, #fff 45%, #aaaaaa 50%, #cccccc 56%, #fff 80%);
+  bottom: 0;
+  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
+  content: '';
+  height: 0;
+  left: 0;
+  position: absolute;
+  transition-duration: 0.3s;
+  transition-property: width, height;
+  width: 0;
+}
+.specialButton3:hover:before, .specialButton3:focus:before, .specialButton3:active:before {
+  height: 25px;
+  width: 25px;
+}
+.specialButton3:hover, .specialButton3:focus, .specialButton3:active {
+  cursor: pointer;
+}
+
+.specialButton4 {
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.specialButton4:before {
+  background: #fff;
+  background: linear-gradient(315deg, #fff 45%, #aaaaaa 50%, #cccccc 56%, #fff 80%);
+  bottom: 0;
+  box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.4);
+  content: '';
+  height: 0;
+  position: absolute;
+  right: 0;
+  transition-duration: 0.3s;
+  transition-property: width, height;
+  width: 0;
+}
+.specialButton4:hover:before, .specialButton4:focus:before, .specialButton4:active:before {
+  height: 25px;
+  width: 25px;
+}
+.specialButton4:hover, .specialButton4:focus, .specialButton4:active {
+  cursor: pointer;
+}
+
+.specialButton5 {
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.specialButton5:before {
+  border-color: transparent transparent #ccc transparent;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  content: '';
+  left: calc(50% - 10px);
+  position: absolute;
+  top: 0;
+  transition: transform 0.3s ease;
+}
+.specialButton5:hover:before, .specialButton5:focus:before, .specialButton5:active:before {
+  transform: translateY(-10px);
+}
+.specialButton5:hover, .specialButton5:focus, .specialButton5:active {
+  cursor: pointer;
+}
+
+.specialButton6 {
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.specialButton6:before {
+  border-color: transparent transparent transparent #ccc;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: calc(50% - 10px);
+  transition: transform 0.3s ease;
+}
+.specialButton6:hover:before, .specialButton6:focus:before, .specialButton6:active:before {
+  transform: translateX(10px);
+}
+.specialButton6:hover, .specialButton6:focus, .specialButton6:active {
+  cursor: pointer;
+}
+
+.specialButton7 {
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.specialButton7:before {
+  border-color: #ccc transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  bottom: 0;
+  content: '';
+  left: calc(50% - 10px);
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+.specialButton7:hover:before, .specialButton7:focus:before, .specialButton7:active:before {
+  transform: translateY(10px);
+}
+.specialButton7:hover, .specialButton7:focus, .specialButton7:active {
+  cursor: pointer;
+}
+
+.specialButton8 {
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+}
+.specialButton8:before {
+  border-color: transparent #ccc transparent transparent;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  top: calc(50% - 10px);
+  transition: transform 0.3s ease;
+}
+.specialButton8:hover:before, .specialButton8:focus:before, .specialButton8:active:before {
+  transform: translateX(-10px);
+}
+.specialButton8:hover, .specialButton8:focus, .specialButton8:active {
+  cursor: pointer;
+}
+
+.specialButton9 {
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.specialButton9:before {
+  border-color: transparent transparent #ccc transparent;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  content: '';
+  left: calc(50% - 10px);
+  position: absolute;
+  top: 0;
+  transition: transform 0.3s ease;
+}
+.specialButton9:hover:before, .specialButton9:focus:before, .specialButton9:active:before {
+  transform: translateY(-10px);
+}
+.specialButton9:hover, .specialButton9:focus, .specialButton9:active {
+  cursor: pointer;
+  transform: translateY(10px);
+}
+
+.specialButton10 {
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.specialButton10:before {
+  border-color: transparent transparent transparent #ccc;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: calc(50% - 10px);
+  transition: transform 0.3s ease;
+}
+.specialButton10:hover:before, .specialButton10:focus:before, .specialButton10:active:before {
+  transform: translateX(10px);
+}
+.specialButton10:hover, .specialButton10:focus, .specialButton10:active {
+  cursor: pointer;
+  transform: translateX(-10px);
+}
+
+.specialButton11 {
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.specialButton11:before {
+  border-color: #ccc transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  bottom: 0;
+  content: '';
+  left: calc(50% - 10px);
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+.specialButton11:hover:before, .specialButton11:focus:before, .specialButton11:active:before {
+  transform: translateY(10px);
+}
+.specialButton11:hover, .specialButton11:focus, .specialButton11:active {
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+.specialButton12 {
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.specialButton12:before {
+  border-color: transparent #ccc transparent transparent;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  top: calc(50% - 10px);
+  transition: transform 0.3s ease;
+}
+.specialButton12:hover:before, .specialButton12:focus:before, .specialButton12:active:before {
+  transform: translateX(-10px);
+}
+.specialButton12:hover, .specialButton12:focus, .specialButton12:active {
+  cursor: pointer;
+  transform: translateX(10px);
 }
 
 /*# sourceMappingURL=main.css.map */
