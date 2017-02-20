@@ -1,8 +1,8 @@
 # CSS Animations using Transitions &amp; Transforms
 
-### CSS transitions can enrich user experiences by adding animations to elements by smoothly changing CSS values over a specified duration
+## CSS transitions can enrich user experiences by adding animations to elements by smoothly changing CSS values over a specified duration
 
-### CSS transforms change the shape and position of the content by rotation, skewing, scaling and translation in 2-d and 3-d space
+## CSS transforms change the shape and position of the content by rotation, skewing, scaling and translation in 2D and 3D space
 
 ## Transition Examples:
 
@@ -94,7 +94,9 @@ button:hover {
 ```
 The button will be twice its original width and triple its original height
 
-CSS3 animations use `keyframes` to specify what styles the element will have at certain times
+## Animation Example:
+
+CSS3 animations use `keyframes` to specify what styles the element will have at certain times. To specify when the styling changes should occur you can use percentages or the keywords "from" (0%) and "to" (100%). Additionally, the animation needs an identifier or name in order to reference the animation when you want to call it. The animation identifier in the example below is `hover-pulse`.
 
 ```
 button:hover {
